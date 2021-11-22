@@ -1,0 +1,18 @@
+<h1> Stupid Coaching </h1>
+<div>
+  <h3><%= @question %></h3>
+  <p> -You </p>
+</div>
+
+<div>
+  <% if @question.downcase == "i am going to work" %>
+    <h3>Great!</h3>
+    <p> -Your Coach </p>
+  <% elsif @question.include? "?" %>
+    <h3>Silly question, get dressed and go to work!</h3>
+    <p> -Your Coach </p>
+  <% else %>
+    <h3>I don't care, get dressed and go to work!</h3>
+    <p> -Your Coach </p>
+  <% end %>
+</div>
